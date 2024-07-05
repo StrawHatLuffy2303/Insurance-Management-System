@@ -5,9 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import com.ims.insurance_management_system.Model.Admin;
 
-
-
 @Repository
-public interface AdminRepository extends JpaRepository<Admin,Long>{
+public interface AdminRepository extends JpaRepository<Admin, Long> {
         public Admin findByMobileNo(String mobileNo);
 }
