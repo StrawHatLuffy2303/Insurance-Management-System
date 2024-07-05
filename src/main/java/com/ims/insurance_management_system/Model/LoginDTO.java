@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class LoginDTO {
-     private String name;
+     private String mobileNo;
      private String password;
      
      @JsonIgnore
