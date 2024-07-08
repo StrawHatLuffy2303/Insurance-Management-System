@@ -3,6 +3,7 @@ package com.ims.insurance_management_system.Implementation;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.ims.insurance_management_system.Exception.LoginException;
@@ -17,8 +18,10 @@ import com.ims.insurance_management_system.Service.ClientService;
 @Service
 public class ClientServiceImpl implements ClientService {
 
+    @Autowired
     private ClientRepository clientRepo;
 
+    @Autowired
     private SessionRepository sessionRepo;
 
     @Override
