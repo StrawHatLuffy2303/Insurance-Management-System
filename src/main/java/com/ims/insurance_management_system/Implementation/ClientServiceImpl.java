@@ -3,6 +3,8 @@ package com.ims.insurance_management_system.Implementation;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
+import org.springframework.stereotype.Service;
+
 import com.ims.insurance_management_system.Exception.LoginException;
 import com.ims.insurance_management_system.Exception.UserException;
 import com.ims.insurance_management_system.Model.Client;
@@ -12,6 +14,7 @@ import com.ims.insurance_management_system.Repository.ClientRepository;
 import com.ims.insurance_management_system.Repository.SessionRepository;
 import com.ims.insurance_management_system.Service.ClientService;
 
+@Service
 public class ClientServiceImpl implements ClientService {
 
     private ClientRepository clientRepo;
