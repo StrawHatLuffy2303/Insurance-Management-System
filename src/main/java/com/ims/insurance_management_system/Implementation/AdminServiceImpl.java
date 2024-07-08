@@ -59,4 +59,15 @@ public class AdminServiceImpl implements AdminService {
 
     }
 
+    @Override
+    public String logOutFromAccount(String key) throws UserException, LoginException {
+        CurrentUserSession currentUserSession = sessionrepo.findByUuid(key);
+        if (currentUserSession == null) {
+            throw new LoginException("No Active Session Found");
+        } else {
+            sessionrepo.delete(currentUserSession);
+        }
+        return "Logout SuccessFully";
+    }
+
 }

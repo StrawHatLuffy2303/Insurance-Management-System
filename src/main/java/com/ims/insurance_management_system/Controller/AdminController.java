@@ -14,6 +14,7 @@ import com.ims.insurance_management_system.Service.AdminService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @RestController
 @RequestMapping("api/admin")
@@ -31,10 +32,16 @@ public class AdminController {
 
     @PostMapping("/login")
     public ResponseEntity<CurrentUserSession> adminLogin(@RequestBody LoginDTO dto)
-            throws UserException,LoginException {
+            throws UserException, LoginException {
         CurrentUserSession activeAdmin = adminservice.logIntoAccount(dto);
 
         return new ResponseEntity<CurrentUserSession>(activeAdmin, HttpStatus.OK);
+    }
+
+    @PostMapping("/logout")
+    public ResponseEntity<String> adminLogout(@RequestParam("key") String key) throws UserException, LoginException {
+        String logOutAdmin = adminservice.logOutFromAccount(key);
+        return new ResponseEntity<String>(logOutAdmin, HttpStatus.OK);
     }
 
 }

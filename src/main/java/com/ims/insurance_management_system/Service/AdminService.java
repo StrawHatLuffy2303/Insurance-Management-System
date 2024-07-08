@@ -9,4 +9,5 @@ import com.ims.insurance_management_system.Model.LoginDTO;
 public interface AdminService {
     public Admin registerAdmin(Admin admin) throws UserException;
     public CurrentUserSession logIntoAccount(LoginDTO dto) throws UserException,LoginException;
+    public String logOutFromAccount(String key) throws UserException,LoginException;
 }
