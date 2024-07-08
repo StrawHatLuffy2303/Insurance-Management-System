@@ -19,6 +19,17 @@ public class ClientServiceImpl implements ClientService {
     private SessionRepository sessionRepo;
 
     @Override
+    public Client saveClient(Client client) throws UserException, LoginException {
+        Client existingClient = clientRepo.findByMobileNo(client.getMobileNo());
+        if (existingClient != null) {
+            throw new LoginException("Mobile number is already registered");
+        } else {
+            return clientRepo.save(client);
+        }
+
+    }
+
+    @Override
     public CurrentUserSession logIntoAccount(LoginDTO dto) throws UserException, LoginException {
         Client existingClient = clientRepo.findByMobileNo(dto.getMobileNo());
         if (existingClient == null) {
