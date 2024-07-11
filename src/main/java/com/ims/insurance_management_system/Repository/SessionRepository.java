@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.ims.insurance_management_system.Model.CurrentUserSession;
 
 @Repository
-public interface SessionRepository extends JpaRepository<CurrentUserSession,Long> {
-   public  CurrentUserSession  findByUuid(String uuid);
+public interface SessionRepository extends JpaRepository<CurrentUserSession, Long> {
+   CurrentUserSession findByUuid(String uuid);
 }
