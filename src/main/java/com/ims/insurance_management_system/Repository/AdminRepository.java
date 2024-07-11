@@ -7,5 +7,5 @@ import com.ims.insurance_management_system.Model.Admin;
 
 @Repository
 public interface AdminRepository extends JpaRepository<Admin, Long> {
-        public Admin findByMobileNo(String mobileNo);
+        Admin findByMobileNo(String mobileNo);
 }
