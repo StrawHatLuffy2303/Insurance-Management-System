@@ -16,7 +16,7 @@ public interface ClientService {
 
     public Client getClientById(Long id, String key) throws ClientException,LoginException;
 
-    public Client updateClient(Long id, Client client, String key) throws UserException ;
+    public Client updateClient(Long id, Client client, String key) throws UserException,ClientException ;
 
     public Client deleteClient(Long id, String key) throws UserException,LoginException;
 
