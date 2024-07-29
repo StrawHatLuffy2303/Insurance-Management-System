@@ -34,6 +34,7 @@
 <h3 style="text-decoration: underline; color:yellow">2.Configure your mySql database</h3>
  <hr>
     <li>change server.port(Optional ,If you want)</li>
+    <p>In application.properties just write Server.port=8078 or.... as you wish.</p>
     <li>put your database.username</li>
     <li>put your database.password</li>
 <hr>
