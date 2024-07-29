@@ -34,12 +34,12 @@
 <h3 style="text-decoration: underline; color:yellow">2.Configure your mySql database</h3>
  <hr>
     <li>change server.port(Optional ,If you want)</li>
-    <p>In application.properties just write Server.port=8078 or.... as you wish.</p>
+    <p>In application.properties just write server.port=8078 or.... as you wish.</p>
     <li>put your database.username</li>
     <li>put your database.password</li>
 <hr>
 
-![configureDB](https://user-images.githubusercontent.com/51885478/230093271-9b960a8c-9f69-4eb1-aa65-c5b102b62459.PNG)
+![configureDB](https://github.com/user-attachments/assets/ee15b23a-e628-4acd-bbcd-bf698b4551dd)
 
      
 <h3 style="text-decoration: underline; color:yellow">3. Create MySql database  : </h3>
