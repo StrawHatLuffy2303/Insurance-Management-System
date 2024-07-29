@@ -30,7 +30,6 @@
  <hr>
 
 ![appliacatioProperties](https://github.com/user-attachments/assets/68e821ae-2805-4582-b1ca-6c41a702b420)
-)
 
 <h3 style="text-decoration: underline; color:yellow">2.Configure your mySql database</h3>
  <hr>
