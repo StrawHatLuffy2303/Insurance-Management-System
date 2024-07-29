@@ -13,6 +13,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToMany;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.Future;
 import jakarta.validation.constraints.Min;
@@ -59,4 +60,8 @@ public class InsurancePolicy {
     @JsonIgnore
     @ManyToMany(cascade = CascadeType.MERGE)
     private List<Client> clients = new ArrayList<>();
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "insurancePolicy", cascade = CascadeType.MERGE)
+    private List<Claim> claims = new ArrayList<>();
 }
