@@ -29,7 +29,8 @@
 <h3 style="text-decoration: underline; color:yellow">1. Open src >main>resources>application.properties</h3>
  <hr>
 
-![appliacatioProperties](https://user-images.githubusercontent.com/51885478/230089331-7e938c17-b2b4-415b-afc1-ea59afa53c96.PNG)
+![appliacatioProperties](![image](https://github.com/user-attachments/assets/68e821ae-2805-4582-b1ca-6c41a702b420)
+)
 
 <h3 style="text-decoration: underline; color:yellow">2.Configure your mySql database</h3>
  <hr>
