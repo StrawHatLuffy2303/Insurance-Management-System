@@ -61,11 +61,12 @@
 <h1>How to execute all Api :</h1>
   <h3>Open one of the below link:</h3>
 	
- [Swagger (Suggested) : http://localhost:8078/swagger-ui/index.html](http://localhost:8078/swagger-ui/index.html)
+ [Swagger (Suggested) : http://localhost:8078/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)(Optional)
+ <p>If you want with good look and run application use Swagger.just search on chrome and you will find it</p>
  <br>
- [Postman : http://localhost:8078/api/admin](http://localhost:8078/api/admin)
+ [Postman : http://localhost:8080/api/admin](http://localhost:8078/api/admin)
 
-  <h2><strong><em>NOTE: Please   change the port number accordingly and run the application first</em></strong></h2>
+  <h2><strong><em>NOTE: Please change the port number accordingly to yours and run the application first</em></strong></h2>
   <hr>
   
   <h2 style="background-color: green;color: #fff;text-align:center">Follow the bellow steps one by one :</h2>  
