@@ -33,7 +33,7 @@
 
 <h3 style="text-decoration: underline; color:yellow">2.Configure your mySql database</h3>
  <hr>
-    <li>change server.port</li>
+    <li>change server.port(Optional ,If you want)</li>
     <li>put your database.username</li>
     <li>put your database.password</li>
 <hr>
